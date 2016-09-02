@@ -1,4 +1,4 @@
 <?php
-require "steel.php"
+require "steel.php";
 throw new Exception("meme!")
 ?>

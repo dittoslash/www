@@ -1,6 +1,6 @@
 <?php require "template.php" ?>
 
 
-New site under development. Once I get libs and things down I'll develop this page a bit more.
+I am bored & can't think of anything to write here. lux@dittoslash.uk to talk to me, queries@dittoslash.uk to ask about the site.
 <br/>
 <a href="http://dittoslash.uk:30080"> Old site </a>

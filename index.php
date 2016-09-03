@@ -1,4 +1,4 @@
-<?php require "steel.php"; require "template.php" ?>
+<?php require "template.php" ?>
 
 
 New site under development. Once I get libs and things down I'll develop this page a bit more.

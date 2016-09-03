@@ -1,5 +1,6 @@
 {
     "require": {
-        "filp/whoops": "^2.1"
+        "filp/whoops": "^2.1",
+        "catfan/Medoo": "^1.1"
     }
 }

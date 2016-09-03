@@ -4,13 +4,13 @@ $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->register();
 
-require "/var/www/secconf.php"; // defines $DB_DATABASE, $DB_HOST, $DB_PASS, and $DB_USER
+require "/var/www/secconf.php"; // defines DB_DATABASE, DB_HOST, DB_PASS, and DB_USER
 
 $db = new medoo([
   'database_type' => 'mysql',
-  'datbase_name' => $DB_DATABASE,
-  'server' => $DB_HOST,
-  'username' => $DB_USER,
-  'password' => $DB_PASS
+  'datbase_name' => DB_DATABASE,
+  'server' => DB_HOST,
+  'username' => DB_USER,
+  'password' => DB_PASS
 ]);
 ?>

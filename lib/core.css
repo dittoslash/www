@@ -4,37 +4,38 @@ body {
   justify-content: center;
 }
 
+a,a:link,a:visited {
+  color: white;
+}
+
+a,a:link,a:visited,.github {
+  color: black;
+}
+
 .title {
   background-color: #66d9ff;
-  color: white;
 }
 
 .twitter {
   background-color: #0084B4;
-  color: white;
 }
 
 .tumblr {
   background-color: #36465D;
-  color: white;
 }
 
 .github {
   background-color: white;
-  color: black;
 }
 
 .code {
   background-color: #33cccc;
-  color: black;
 }
 
-.dc .code {
+.dc,.code {
   background-color: #b32d00;
-  color: white
 }
 
-.dead .code {
+.dead,.code {
   background-color: black;
-  color: white;
 }

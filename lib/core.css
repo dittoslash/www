@@ -1,4 +1,40 @@
 body {
   font-family: monospace;
-  background-color: #F0F0F0;
+  background-color: #E0E0E0;
+  justify-content: center;
+}
+
+.title {
+  background-color: #66d9ff;
+  color: white;
+}
+
+.twitter {
+  background-color: #0084B4;
+  color: white;
+}
+
+.tumblr {
+  background-color: #36465D;
+  color: white;
+}
+
+.github {
+  background-color: white;
+  color: black;
+}
+
+.code {
+  background-color: #33cccc;
+  color: black;
+}
+
+.dc .code {
+  background-color: #b32d00;
+  color: white
+}
+
+.dead .code {
+  background-color: black;
+  color: white;
 }

@@ -33,12 +33,12 @@ a,a:link,a:visited {
   color: black;
 }
 
-.dc .code {
+.dc.code {
   background-color: #b32d00;
   color: white;
 }
 
-.dead .code {
+.dead.code {
   background-color: black;
   color: white;
 }

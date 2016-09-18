@@ -1,11 +1,16 @@
 body {
   font-family: monospace;
   background-color: #E0E0E0;
-  justify-content: center;
 }
 
 a,a:link,a:visited {
   color: inherit;
+}
+
+div {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
 }
 
 .title {

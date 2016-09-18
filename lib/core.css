@@ -7,7 +7,7 @@ a,a:link,a:visited {
   color: inherit;
 }
 
-div {
+.entry {
   width: 50%;
   margin-left: 25%;
   text-align: center;

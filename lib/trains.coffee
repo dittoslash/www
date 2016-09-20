@@ -34,7 +34,7 @@ travel = (x) ->
   csn = x
   update()
 travelbutton = (x, t) ->
-  "<button onClick=travel(#{x})>#{t}</button>"
+  "<button onClick=travel('#{x}')>#{t}</button>"
 
 update = ->
   $("#locationdisplay").html cs()["name"]

@@ -1,5 +1,5 @@
 data = #connections and startingstation are by ID name, not visible name
-  startingstation: "central_station"
+  startingstation: "central"
   stations:
     central:
       name: "City Centre Station"

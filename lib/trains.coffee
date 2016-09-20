@@ -15,7 +15,7 @@ data = #connections and startingstation are by ID name, not visible name
       name: "Starford Subway"
       train: false
       subway: true
-      connections: ["yard_subway_junciton, starford_subway_exchange, central"]
+      connections: ["yard_subway_junciton", "starford_subway_exchange", "central"]
     starford_subway_exchange:
       name: "Starford Subway Exchange"
       train: true
@@ -30,7 +30,7 @@ data = #connections and startingstation are by ID name, not visible name
       name: "Yard Central"
       train: true
       subway: true
-      connections: ["trainyard","subyard", "starford_station"]
+      connections: ["yard_subway_junction", "trainyard", "subyard", "starford_station"]
     yard_subway_junction:
       name: "Yard Subway Junction"
       train: false

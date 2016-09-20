@@ -1,0 +1,49 @@
+data = #connections and startingstation are by ID name, not visible name
+  startingstation: "central_station"
+  stations:
+    central:
+      name: "City Centre Station"
+      train: true
+      subway: true
+      connections: ["starford_station"]
+    starford_station:
+      name: "Starford Station"
+      train: true
+      subway: false
+      connnections: ["central", "yard_central"]
+    trainyard:
+      name: "Trainyard"
+      train: true
+      subway: false
+      connections: ["yard_central"]
+    yard_central:
+      name: "Yard Central"
+      train: true
+      subway: true
+      connections: ["trainyard","subyard", "starford_station"]
+    subyard:
+      name: "Subway Yard"
+      train: false
+      subway: true
+      connections: ["yard_central"]
+
+csn = data["startingstation"]
+cs = ->
+  data["stations"][csn]
+travel = (x) ->
+  csn = x
+  update()
+travelbutton = (x, t) ->
+  "<button onClick=travel(#{x})>#{t}</button>"
+
+update = ->
+  $("#locationdisplay").html currentstation
+  $("#travel").html ""
+  for i in data["stations"][currentstation]["connections"]
+    r = data["stations"][i]
+    $("#travel").append "[Subway] #{travelbutton(i, r["name"])}" if r["subway"] and cs["subway"]
+    $("#travel").append "[Train] #{travelbutton(i, r["name"])}" if r["train"] and cs["train"]
+
+$(document).ready(->
+  update()
+)

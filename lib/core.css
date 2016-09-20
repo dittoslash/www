@@ -11,6 +11,8 @@ a,a:link,a:visited {
   width: 50%;
   margin-left: 25%;
   text-align: center;
+  background-color: #D0D0D0;
+  color: black;
 }
 
 .title {

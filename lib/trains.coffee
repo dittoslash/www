@@ -11,6 +11,16 @@ data = #connections and startingstation are by ID name, not visible name
       train: true
       subway: false
       connections: ["central", "yard_central"]
+    starford_subway:
+      name: "Starford Subway"
+      train: false
+      subway: true
+      connections: ["yard_subway_junciton, starford_subway_exchange, central"]
+    starford_subway_exchange:
+      name: "Starford Subway Exchange"
+      train: true
+      subway: true
+      connections: ["starford_station", "starford_subway"]
     trainyard:
       name: "Trainyard"
       train: true
@@ -21,6 +31,11 @@ data = #connections and startingstation are by ID name, not visible name
       train: true
       subway: true
       connections: ["trainyard","subyard", "starford_station"]
+    yard_subway_junction:
+      name: "Yard Subway Junction"
+      train: false
+      subway: true
+      connections: ["yard_central", "starford_subway"]
     subyard:
       name: "Subway Yard"
       train: false
@@ -37,7 +52,8 @@ travelbutton = (x, t) ->
   "<button onClick=travel('#{x}')>#{t}</button>"
 
 update = ->
-  $("#locationdisplay").html cs()["name"]
+  $("#locationdisplay").html if cs["subway"] and not cs["train"] then "#{cs()["name"]} [Subway]" else if cs["train"] and not cs["subway"] then "#{cs()["name"]} [Train]" else "#{cs()["name"]} [Subway/Train]"
+
   $("#travel").html ""
   for i in data["stations"][csn]["connections"]
     r = data["stations"][i]

@@ -52,7 +52,9 @@ travelbutton = (x, t) ->
   "<button onClick=travel('#{x}')>#{t}</button>"
 
 update = ->
-  $("#locationdisplay").html if cs["subway"] and not cs["train"] then "#{cs()["name"]} [Subway]" else if cs["train"] and not cs["subway"] then "#{cs()["name"]} [Train]" else if cs["train"] and cs["subway"] then "#{cs()["name"]} [Subway/Train]"
+  if (cs["subway"] and not cs["train"]) then $("#locationdisplay").html "#{cs()["name"]} [Subway]"
+  else if (cs["train"] and not cs["subway"]) then $("#locationdisplay").html "#{cs()["name"]} [Train]"
+  else if (cs["train"] and cs["subway"]) then $("#locationdisplay").html "#{cs()["name"]} [Subway/Train]" else
 
   $("#travel").html ""
   for i in data["stations"][csn]["connections"]

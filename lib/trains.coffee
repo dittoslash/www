@@ -41,8 +41,8 @@ update = ->
   $("#travel").html ""
   for i in data["stations"][currentstation]["connections"]
     r = data["stations"][i]
-    $("#travel").append "[Subway] #{travelbutton(i, r["name"])}" if r["subway"] and cs["subway"]
-    $("#travel").append "[Train] #{travelbutton(i, r["name"])}" if r["train"] and cs["train"]
+    $("#travel").append "<div class='entry'>[Subway] #{travelbutton(i, r["name"])} </div>" if r["subway"] and cs["subway"]
+    $("#travel").append "<div class='entry'>[Train] #{travelbutton(i, r["name"])} </div>" if r["train"] and cs["train"]
 
 $(document).ready(->
   update()

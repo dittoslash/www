@@ -37,9 +37,9 @@ travelbutton = (x, t) ->
   "<button onClick=travel(#{x})>#{t}</button>"
 
 update = ->
-  $("#locationdisplay").html currentstation
+  $("#locationdisplay").html cs["name"]
   $("#travel").html ""
-  for i in data["stations"][currentstation]["connections"]
+  for i in data["stations"][csn]["connections"]
     r = data["stations"][i]
     $("#travel").append "<div class='entry'>[Subway] #{travelbutton(i, r["name"])} </div>" if r["subway"] and cs["subway"]
     $("#travel").append "<div class='entry'>[Train] #{travelbutton(i, r["name"])} </div>" if r["train"] and cs["train"]

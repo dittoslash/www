@@ -10,7 +10,7 @@ data = #connections and startingstation are by ID name, not visible name
       name: "Starford Station"
       train: true
       subway: false
-      connnections: ["central", "yard_central"]
+      connections: ["central", "yard_central"]
     trainyard:
       name: "Trainyard"
       train: true

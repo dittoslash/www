@@ -15,6 +15,10 @@ a,a:link,a:visited {
   color: black;
 }
 
+.large {
+  width: 80%;
+  margin-left: 10%;
+}
 .title {
   background-color: #66d9ff;
   color: black;

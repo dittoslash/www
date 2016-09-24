@@ -15,52 +15,52 @@ a,a:link,a:visited {
   color: black;
 }
 
-.small {
+.small.entry {
   width: 30%;
   margin-left: 45%;
 }
 
-.large {
+.large.entry {
   width: 80%;
   margin-left: 10%;
 }
 
-.huge {
+.huge.entry {
   width: 100%;
   margin-left: 0%;
 }
 
-.title {
+.title.entry {
   background-color: #66d9ff;
   color: black;
 }
 
-.twitter {
+.twitter.entry {
   background-color: #0084B4;
   color: #e0e0e0;
 }
 
-.tumblr {
+.tumblr.entry {
   background-color: #36465D;
   color: #e0e0e0;
 }
 
-.github {
+.github.entry {
   background-color: white;
   color: black;
 }
 
-.code {
+.code.entry {
   background-color: #33cccc;
   color: black;
 }
 
-.dc.code {
+.dc.code.entry {
   background-color: #4d0f00;
   color: #e0e0e0;
 }
 
-.dead.code {
+.dead.code.entry {
   background-color: black;
   color: #e0e0e0;
 }

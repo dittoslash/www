@@ -55,7 +55,12 @@ a,a:link,a:visited {
   color: black;
 }
 
-.dc.code.entry {
+.abandoned.code.entry {
+  background-color: #aac5c5;
+  color: #c0c0c0;
+}
+
+.broken.code.entry {
   background-color: #4d0f00;
   color: #e0e0e0;
 }

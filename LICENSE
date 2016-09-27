@@ -1,0 +1,30 @@
+Lux License (github.com/dittoslash, dittoslash.uk/LICENSE)
+
+US - Dittoslash.
+WE - US.
+CODE - everything in the repository/website containing this LICENSE. (except for the files listed in section 3.)
+YOU - you or the company/group/whatever you represent by reading this LICENSE.
+LICENSE - this license.
+
+-- 1. Where this LICENSE applies --
+
+The LICENSE applies to the CODE wherever it is included.
+If you modify the CODE for your usage, the LICENSE still applies.
+The CODE section used must be marked clearly. You may not declare you made it,
+and you must link to the LICENSE from it.
+
+-- 2. How you can use the CODE --
+
+You may use this CODE in open-source projects freely (within the rest of the rules).
+You may use it in closed-source projects if you give US credit.
+
+-- 3. Exceptions --
+
+Files in this repository that are not covered by the LICENSE:
+lib/rot.js (Source: github.com/ondras/rot.js)
+projects/swordsman/lib/droll.min.js (Source: github.com/thebinarypenguin/droll)
+
+-- 4. Commercial use --
+
+This LICENSE, on its own, does not permit commercial use.
+WE can grant explicit permission to use the CODE commercially upon request.

@@ -2,29 +2,46 @@ Lux License (github.com/dittoslash, dittoslash.uk/LICENSE)
 
 US - Dittoslash.
 WE - US.
-CODE - everything in the repository/website containing this LICENSE. (except for the files listed in section 3.)
+CODE - everything in the repository/website containing this LICENSE. (except for the files listed in appendix A.)
 YOU - you or the company/group/whatever you represent by reading this LICENSE.
 LICENSE - this license.
 
 -- 1. Where this LICENSE applies --
 
-The LICENSE applies to the CODE wherever it is included.
+The LICENSE applies to the CODE wherever it is used.
 If you modify the CODE for your usage, the LICENSE still applies.
+- 1.a Marking used sections -
 The CODE section used must be marked clearly. You may not declare you made it,
 and you must link to the LICENSE from it.
+- 1.b Cheating -
+You can't say you used up to a specific part of my code, unmark it as LICENSE'd, 
+change it, and mark the rest as LICENSE'd. That falls under modifying, 
+and the changed code is still covered by the LICENSE.
 
 -- 2. How you can use the CODE --
 
 You may use this CODE in open-source projects freely (within the rest of the rules).
 You may use it in closed-source projects if you give US credit.
+Using the CODE dosen't forfeit you from licensing 
 
--- 3. Exceptions --
-
-Files in this repository that are not covered by the LICENSE:
-lib/rot.js (Source: github.com/ondras/rot.js)
-projects/swordsman/lib/droll.min.js (Source: github.com/thebinarypenguin/droll)
-
--- 4. Commercial use --
+-- 3. Commercial use --
 
 This LICENSE, on its own, does not permit commercial use.
 WE can grant explicit permission to use the CODE commercially upon request.
+
+-- 4. Reusing the LICENSE --
+
+Sure, go ahead, use the LICENSE.
+For confusion, the LICENSE applies to itself. (except for part 1)
+If you modify the LICENSE, you have to state that it is modified.
+=IMPORTANT: THIS LICENSE MAY NOT BE APPLIED TO CODE YOU HAVE NOT CREATED.
+=IMPORTANT.a: 'you' here also accounts for companies you represent and opensource contributors.
+=IMPORTANT.b: If there's code in your project that you didn't write, 
+             | the LICENSE does not apply to that. Files this rule applies to must be declared in Appendix A.
+
+-- Appendix A. Exceptions --
+
+This is not part of the LICENSE.
+Files listed here are not covered by the LICENSE.
+lib/rot.js (Source: github.com/ondras/rot.js)
+projects/swordsman/lib/droll.min.js (Source: github.com/thebinarypenguin/droll)
